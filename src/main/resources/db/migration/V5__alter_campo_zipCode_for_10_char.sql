@@ -1,0 +1,1 @@
+ALTER TABLE employees ALTER COLUMN zipCode TYPE VARCHAR(11);
