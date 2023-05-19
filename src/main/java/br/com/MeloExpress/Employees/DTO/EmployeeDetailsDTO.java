@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 public record EmployeeDetailsDTO(
+        Long id,
         UUID employeeCode,
         String name,
         String cpf,
@@ -23,6 +24,7 @@ public record EmployeeDetailsDTO(
         boolean active
 ) {
     public EmployeeDetailsDTO(
+            Long id,
             UUID employeeCode,
             String name,
             String cpf,
@@ -39,6 +41,6 @@ public record EmployeeDetailsDTO(
             String state,
             String country
     ) {
-        this(employeeCode, name, cpf, rg, cnh, birth, gender, occupation, zipCode, street, number, neighborhood, city, state, country, true);
+        this(id, employeeCode, name, cpf, rg, cnh, birth, gender, occupation, zipCode, street, number, neighborhood, city, state, country, true);
     }
 }

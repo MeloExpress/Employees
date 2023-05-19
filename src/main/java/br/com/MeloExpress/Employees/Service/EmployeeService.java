@@ -70,6 +70,7 @@ public class EmployeeService {
         Employees employee = employeeOptional.get();
 
         EmployeeDetailsDTO employeeDetailsDTO = new EmployeeDetailsDTO(
+                employee.getId(),
                 employee.getEmployeeCode(),
                 employee.getName(),
                 employee.getCpf(),
